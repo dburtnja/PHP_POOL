@@ -1,0 +1,23 @@
+body{
+    background-image: url(https://blogs-images.forbes.com/alexknapp/files/2014/04/kepler186f_artistconcept_0-e1397759149233.jpg);
+    font-size: 5vw;
+}
+
+.menu{
+    position: relative;
+    display: inline-block;
+}
+
+.drop{
+    display: none;
+    position: absolute;
+}
+
+.menu:hover .drop{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

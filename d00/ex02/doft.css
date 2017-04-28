@@ -1,0 +1,175 @@
+
+body{
+    background-color: #3f3f3f;
+}
+
+.top{
+    position: relative;
+    background-color: #909091;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    width: 1420px;
+    height: 140px;
+    margin: auto;
+}
+
+.d42{
+    height: 110;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.botom{
+    width: 1420px;
+    margin: auto;
+}
+
+.botom div{
+    display: inline-block;
+}
+
+.cent{
+    background-color: #909091;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    width: 1020;
+    height: 580;
+    clear: both;
+    position: relative;
+}
+
+.cent img{
+    width: 1000px;
+    height: 560px;
+    padding: 10px;
+}
+
+.left{
+    background-color: #909091;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    width: 140;
+    height: 425;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.right{
+    background-color: #909091;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    width: 140;
+    height: 425;
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.t_left{
+    width: 20px;
+    float: right;
+    padding: 10px;
+}
+
+.r{
+    width: 20px;
+    margin-bottom: 70;
+}
+
+.lou{
+    position: absolute;
+    top: 13px;
+    right: 30px;
+}
+
+.brick{
+    width: 120px;
+    height: 70px;
+    background-image: url(resources/brick.jpg);
+    margin: 10px;
+}
+
+.right img{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.left img{
+    width: 70px;
+    margin-top: 12px;
+    margin-left: 35px;
+}
+
+.inp{
+    width: 520px;
+    height: 170px;
+    border-radius: 10px;
+    background-color: #88ff89;
+    box-shadow: 10px 10px 10px black;
+    position: absolute;
+    bottom: -90;
+    left: -245;
+}
+
+input{
+    width: 380px;
+    height: 20px;
+    position: absolute;
+    top: 90px;
+    left: 13px;
+}
+
+button{
+    height: 20px;
+    margin-left: 10px;
+    position: absolute;
+    top: 90px;
+    left: 397px;
+}
+
+a img:hover{
+    border: 5px solid red;
+}
+
+.brick:hover{
+    border: 5px solid red;
+}
+
+.ikea{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    top: 335px;
+    left: 330px;
+}
+
+.apple{
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    bottom: 90px;
+    right: 32px;
+}
+
+.inp p{
+    position: absolute;
+    font-family: Arial;
+    font-size: 16px;
+    top: -15px;;
+    left: 10px;
+}
+
+.s{
+    font-style: italic;
+}
+
+.font{
+    font-size: 40;
+    font-family: non;
+}
+
+.shadow{
+    text-shadow: 0px 5px 3px red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<input id="left" type="text" value="0" required>
+<select id="operation" required>
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+</select>
+<input id="right" type="text" value="0" required>
+<input id="submit" type="submit" value="Try me!">
+</body>
+<script>
+    $(document).ready(function resetTimer() {
+        timer = setTimeout(function () {
+            alert("Please, use me...");
+            resetTimer();
+        }, 30000);
+    });
+
+    $("#submit").click(function calculate() {
+        var res;
+        var l_val;
+        var r_val;
+
+        l_val = Math.floor($("#left").val());
+        r_val = Math.floor($("#right").val());
+        if (l_val == $("#left").val() && r_val == $("#right").val() && l_val >= 0 && r_val >= 0) {
+            if ((operation.value === '/' || operation.value === '%') && r_val === 0) {
+                console.log("It’s over 9000!");
+                alert("It’s over 9000!");
+            }
+            else {
+                res = eval(l_val + operation.value + r_val);
+                console.log(res);
+                alert(res);
+            }
+        }
+        else
+            alert("Error :(");
+    })
+</script>
+</html>

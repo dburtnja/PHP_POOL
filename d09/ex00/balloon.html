@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            #b {
+                transition: 400ms;
+                border-radius: 50%;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="b" onclick="change_size();" onmouseout="shrinc();"></div>
+    </body>
+    <script type="text/javascript">
+        var div = document.getElementById("b");
+        div.style.width = "200px";
+        div.style.height = "200px";
+        div.style.backgroundColor = "red";
+        function change_size() {
+            var size = parseInt(div.style.width) + 10;
+            var color = div.style.backgroundColor;
+
+            if (size > 420)
+                size = 200;
+            if (color === "red")
+                color = "green";
+            else if (color === "green")
+                color = "blue";
+            else if (color === "blue")
+                color = "red";
+            console.log(size);
+            div.style.width = size + "px";
+            div.style.height = size + "px";
+            div.style.backgroundColor = color;
+        }
+        function shrinc() {
+            var size = parseInt(div.style.width) - 5;
+            var color = div.style.backgroundColor;
+
+            if (size <= 200)
+                size = 200;
+            if (color === "red")
+                color = "blue";
+            else if (color === "blue")
+                color = "green";
+            else if (color === "green")
+                color = "red";
+            console.log(size);
+            div.style.width = size + "px";
+            div.style.height = size + "px";
+            div.style.backgroundColor = color;
+        }
+    </script>
+</html>

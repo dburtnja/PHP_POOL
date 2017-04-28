@@ -1,0 +1,10 @@
+<- Vertex ---------------------------------------------------------------------
+The Vertex class represent point in spase.
+
+An instance must be contructed from array whit 'x', 'y', 'z' and/or 'w', and/or 'color' from Color class:
+$green = new Color( array( 'red' =>   0, 'green' => 255, 'blue' =>   0 ) );
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0, 'w' => 3.0, , 'color' => $green) );
+
+If 'w' coordinate doesn't given it will set to 1.0 and if 'color' class doesn't given it wil set to white.
+
+--------------------------------------------------------------------- Vertex ->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO DO</title>
+    <style>
+        body {
+            background-color: greenyellow;
+        }
+        div {
+            margin: auto;
+            color: floralwhite;
+        }
+        div div {
+            margin: 10px;
+            background-color:  green;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 45px;
+        }
+        div div:before{
+            content: close-quote;
+        }
+        input {
+            width: 200px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ft_list">
+    </div>
+    <input type="button" value="New" onclick="addElement()">
+</body>
+    <script src="todo.js"></script>
+</html>

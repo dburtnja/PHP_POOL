@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        div {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            max-width: 420px;
+            max-height: 420px;
+            transition: 420ms;
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+
+$('div').click(function () {
+    if ($(this).css('backgroundColor') === "rgb(255, 0, 0)")
+        $(this).css('backgroundColor', "rgb(0, 255, 0)");
+    if ($(this).css('backgroundColor') === "rgb(0, 255, 0)")
+        $(this).css('backgroundColor', "rgb(0, 0, 255)");
+    if ($(this).css('backgroundColor') === "rgb(0, 0, 255)")
+        $(this).css('backgroundColor', "rgb(255, 0, 0)");
+    $(this).css('width', parseInt($(this).css('width')) + 10 + "px");
+    $(this).css('height', parseInt($(this).css('height')) + 10 + "px");
+});
+
+$('div').mouseout(function () {
+    if ($(this).css('backgroundColor') === "rgb(255, 0, 0)")
+        $(this).css('backgroundColor', "rgb(0, 0, 255)");
+    if ($(this).css('backgroundColor') === "rgb(0, 255, 0)")
+        $(this).css('backgroundColor', "rgb(255, 0, 0)");
+    if ($(this).css('backgroundColor') === "rgb(0, 0, 255)")
+        $(this).css('backgroundColor', "rgb(0, 255, 0)");
+    $(this).css('width', parseInt($(this).css('width')) - 5 + "px");
+    $(this).css('height', parseInt($(this).css('height')) - 5 + "px");
+});
+</script>
+</html>
